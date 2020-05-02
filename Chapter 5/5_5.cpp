@@ -25,7 +25,7 @@ std::cout<<"Enter month and number of book in it:\n   |  \n";
 std::cin>>mont>>num_book[i];
 int n=strlen(mont+1);
 month[i]=new char[n+1];
-month[i]=mont;
+strcpy(month[i],mont);
 //std::cin.get();
 //int n=strlen((month[i])+1);
 //std::cout<<"Length= "<<n<<std::endl;
