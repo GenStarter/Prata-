@@ -66,13 +66,21 @@ for(i=0;i<cont;i++){
         std::cin.get();
 }
 
+std::cout<<"Grand Patrons:"<<std::endl;
+for(i=0;i<cont;i++){
+     if((arr+i)->amount>=10000)
+            std::cout<<arr[i].name<<" "<<(arr+i)->amount<<std::endl;
+        }
+
+std::cout<<"Patrons:"<<std::endl;
  for(i=0;i<cont;i++){
-     std::cout<<std::endl;
     //    for(n=0;n<sizeof(arr[i].name);n++)
-            std::cout<<arr[i].name<<" "<<(arr+i)->amount;
+     if((arr+i)->amount<10000)
+            std::cout<<arr[i].name<<" "<<(arr+i)->amount<<std::endl;
             delete arr[i].name;
         }
 
 delete []arr;
+
 return 0;
 }
